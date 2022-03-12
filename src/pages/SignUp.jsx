@@ -41,7 +41,7 @@ function SignUp() {
         password
       )
       const user = userCredential.user
-      updateProfile(auth, {
+      updateProfile(auth.currentUser, {
         displayName: name
       })
 
